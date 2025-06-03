@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoundCloud Player</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>SoundCloud Playlist Player</h1>
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Pesquisar playlist..." required />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <div id="playlist-info" class="hidden">
+      <h2 id="playlist-title"></h2>
+      <ul id="track-list"></ul>
+    </div>
+
+    <audio id="audio-player" controls></audio>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

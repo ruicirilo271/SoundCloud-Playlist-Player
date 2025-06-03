@@ -1,0 +1,114 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f1e3;
+  color: #4b3b2b;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.container {
+  background: #fff8f0;
+  padding: 25px 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgb(75 59 43 / 0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #5d4636;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #b99b6b;
+  border-radius: 8px 0 0 8px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #886f42;
+}
+
+button {
+  background-color: #b99b6b;
+  border: none;
+  color: white;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #886f42;
+}
+
+#playlist-info.hidden {
+  display: none;
+}
+
+#playlist-title {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #7b6445;
+}
+
+#track-list {
+  list-style: none;
+  padding: 0;
+  max-height: 280px;
+  overflow-y: auto;
+  border: 1px solid #b99b6b;
+  border-radius: 8px;
+}
+
+#track-list li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #d2c5a0;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#track-list li:last-child {
+  border-bottom: none;
+}
+
+#track-list li:hover {
+  background-color: #f0e4cd;
+}
+
+#track-list li.active {
+  background-color: #b99b6b;
+  color: white;
+}
+
+audio#audio-player {
+  width: 100%;
+  margin-top: 20px;
+  outline: none;
+  border-radius: 8px;
+  background-color: #fff8f0;
+  box-shadow: 0 2px 10px rgb(75 59 43 / 0.2);
+}
